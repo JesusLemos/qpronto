@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss']
 })
-export class Tab1Page {
+export class Tab1Page{
 
   menu = [
   {
@@ -43,11 +43,15 @@ export class Tab1Page {
   price_Total= 0;
 
   constructor() { }
- prueba(){
-   this.price_Total =0;
-   for(let i=0; i <= this.menu.length; i++){
+
+  precioTotal(){
+
+      for ( let i = 0; i <= this.menu.length; i++ ){
+
+        this.price_Total += this.menu[i].Price * this.menu[i].Amount;
+       }
      
-     this.price_Total += this.menu[i].Price * this.menu[i].Amount;
-  }
+
   }
 }
+
