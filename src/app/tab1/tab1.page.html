@@ -13,16 +13,22 @@
     </ion-toolbar>
   </ion-header>
 
+  <form (submit)='prueba()'>
   <ion-list>
-    <ion-item *ngFor="let item of menu">
-      <ion-label>
-        {{item.PlateName}}
-      </ion-label>
-    </ion-item>
-  </ion-list>
+    <ion-label>Menu</ion-label>
+      <ion-item *ngFor="let item of menu">
+        
+          <ion-label>{{item.PlateName}}</ion-label>
+          <ion-input type='number' value='{{item.Amount}}' [(ngModel)]="menu[0].Amount" [ngModelOptions]="{standalone: true}"></ion-input>
+          <label>Price : {{item.Price * item.Amount | number: '2.2-2'}}</label>
+      
+       
+      </ion-item>
+      <button>tab</button>
+      
+    </ion-list>
+    </form>
 
-<!--   <app-explore-container name="Tab 1 page"></app-explore-container>
-
- -->
-
+    <ion-label>{{price_Total}}</ion-label>
+ 
 </ion-content>
