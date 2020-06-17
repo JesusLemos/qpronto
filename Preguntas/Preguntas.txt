@@ -4,7 +4,10 @@ cliente que vaya a querer 2 platos , 3 platos etc pueda pedirlo en un mismo pedi
 Otra opcion que pensé fue tener un menu despegable con toda la carta del restaurante y solo elegir la comida del cliente quiera.
 
 
+
+
 1º ¿Por qué no hay estilos?
 2º ¿Por qué hay varios componentes que hace lo mismo en vez de reutilizar?
 3º ¿Por qué usar Lazy Loading para modularizar la aplicación cuando es tan pequeña la aplicacion?
 4º ¿Solo tiene la funcionalidad de pedir la comida ?
+5º ¿No hay una función para pagar solo es para visualizar el precio de tu pedido?
